@@ -21,11 +21,11 @@ all_real_answer = []
 def login(usrname, passwd):
     driver = webdriver.Firefox(executable_path="./geckodriver")
 
-    driver.get('https://sso.dtdjzx.gov.cn/sso/login')
+    driver.get('https://xxx.com/sso/login')
     time.sleep(3)
 
-    user = '13310678214'
-    passwd = 'nji90okm'
+    user = 'xxx'
+    passwd = 'xxx'
     validate = input("Validate Code:")
 
     driver.find_element_by_id("username").send_keys(user)
@@ -49,7 +49,7 @@ def login(usrname, passwd):
 
     #print(driver.page_source)
 
-    driver.get("http://xxjs.dtdjzx.gov.cn/index.html")
+    driver.get("http://xxx.com/index.html")
 
 
     time.sleep(10)
@@ -60,8 +60,8 @@ def login(usrname, passwd):
     driver.find_element_by_id('bts').click()
     time.sleep(3)
 
-    driver.get("http://xxjs.dtdjzx.gov.cn/monidati.html")
-    #driver.get("http://xxjs.dtdjzx.gov.cn/kaishijingsai.html")
+    #driver.get("http://xxx.cn/monidati.html")
+    #driver.get("http://xxx.cn/kaishijingsai.html")
     time.sleep(5)
 
 
@@ -163,8 +163,8 @@ def submitTestPaper():
 
 
 if __name__ == "__main__":
-    usename = "13310678214"
-    passwd = "nji90okm"
+    usename = "xxx"
+    passwd = "xxx"
     #validate = input("Validate Code:")
     drv = login(usename, passwd)
     getQestions(drv)
