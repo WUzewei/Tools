@@ -1,0 +1,6 @@
+1. Get OMCI message after running CLI command;
+	- generally the OMCI message would be saved automatically in /tmp/omci.log in ISAM products
+2. Execute drawOmciSession.exe and entry the above OMCI message path;
+3. A new omci_session.pdf file would be generated in the current directory.
+
+SFHM-E
